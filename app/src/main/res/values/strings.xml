@@ -13,7 +13,30 @@
     <string name="email">E-mail</string>
     <string name="password">Password</string>
 
+    <string name="srilankan">Sri Lankan</string>
+    <string name="indian">Indian</string>
+    <string name="chinese">Chinese</string>
+    <string name="italian">Italian</string>
+    <string name="view_btn">View</string>
 
+    <string name="recipe1">Rice and Curry - Egg</string>
+    <string name="price1">Rs.180.00</string>
+    <string name="recipe2">Rice and Curry - Chicken</string>
+    <string name="price2">Rs.250.00</string>
+    <string name="recipe3">Rice and Curry - Fish</string>
+    <string name="price3">Rs.200.00</string>
+    <string name="recipe4">Cheese Kottu</string>
+    <string name="price4">Rs.300.00</string>
 
+    <string name="home_btn">Home</string>
+    <string name="bag_btn">Bag</string>
+    <string name="favorite_btn">Favorites</string>
+    <string name="profile_btn">Profile</string>
+    <string name="order_btn">Order</string>
+    <string name="addFav_btn">Add to Favorites</string>
+    <string name="add_btn">Add</string>
+    <string name="dlt_btn">Delete</string>
+
+    <string name="para_1">\n\n\n Basmathi Rice\n Devilled Potato\n Dhal Curry\n Chicken Curry\n Vegetable Salad</string>
 
 </resources>

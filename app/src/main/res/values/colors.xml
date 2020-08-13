@@ -6,5 +6,6 @@
     <color name="colorTheme">#FF5D55</color>
     <color name="colorName">#E61610</color>
     <color name="colorBackground">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
 
 </resources>
