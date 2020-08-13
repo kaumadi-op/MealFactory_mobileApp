@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Meal Factory App</string>
+    <string name="app">Meal Factory</string>
+    <string name="logo">Logo</string>
+    <string name="phone">0712345678</string>
+    <string name="enter_phone">Enter Mobile Number</string>
+    <string name="next_btn">Next</string>
+    <string name="back_btn">Back</string>
+    <string name="enter_code">Enter the Confirmation Code</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="avatar">Avatar</string>
+    <string name="name">Name</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+
+
+
+
+</resources>
