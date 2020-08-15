@@ -1,0 +1,3 @@
+include ':app:diliverydetails'
+include ':app'
+rootProject.name = "Food Factory"

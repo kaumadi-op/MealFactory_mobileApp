@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Meal Factory App</string>
+    <string name="app">Meal Factory</string>
+    <string name="logo">Logo</string>
+    <string name="back_btn">Back</string>
+    <string name="Dil_ive">Enter Details</string>
+    <string name="Name">Name</string>
+    <string name="Address">Address</string>
+    <string name="Location">Location</string>
+    <string name="Contact_no">Contact no</string>
+    <string name="Name1"></string>
+    <string name="Address1"></string>
+    <string name="Location1"></string>
+    <string name="Contact_no1"></string>
+    <string name="Sub_btn">Submit</string>
+    <string name="Can_btn">Cancle</string>
+    <string name="Home_btn">Home</string>
+    <string name="bag_btn">Bag</string>
+    <string name="Fav_btn">Favorites</string>
+    <string name="profile_btn">Profile</string>
+
+    <string name="Details">Dilivery Details</string>
+    <string name="Payement_btn">Make Payment</string>
+
+    <string name="Payment">Payment</string>
+    <string name="Cash_btn">Cash</string>
+    <string name="Card_btn">Card</string>
+
+    <string name="method">Choose Payment Method</string>
+    <string name="visa_btn">Visa</string>
+    <string name="master_btn">Master</string>
+    <string name="Date">Date</string>
+    <string name="Date1"></string>
+    <string name="Amount">Amount</string>
+    <string name="Amount1"></string>
+
+    <string name="card_det">Enter Card Details</string>
+    <string name="Card_no">Card No</string>
+    <string name="card_no1"></string>
+    <string name="Sec">Security code</string>
+    <string name="sec1">cvn</string>
+    <string name="expir_date">Expire Date</string>
+    <string name="ex_date"></string>
+    <string name="pay_btn">Pay</string>
+
+</resources>
