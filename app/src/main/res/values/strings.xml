@@ -9,12 +9,12 @@
     <string name="message">type message</string>
     <string name="submit_btn">SEND MESSAGE</string>
     <string name="delivery_icon">Delivery</string>
-    <string name="mail_icon">E-mail</string>
-    <string name="contact_number">Delivery Contact Number</string>
-    <string name="mail">E-mail Address</string>
+    <string name="mail_icon">Meal Factory E-mail</string>
+    <string name="contact_number">+94764532986</string>
+    <string name="meal_factory_email">mealfactory@gmail.com</string>
 
     <string name="thanking_msg1">Thank You</string>
-    <string name="thanking_msg2">Stay tuned</string>
+    <string name="thanking_msg2">We will be in touch shortly</string>
     <string name="backToHome_btn">Back to Home</string>
 
 
