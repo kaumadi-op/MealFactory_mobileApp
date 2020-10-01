@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "129464719628",
+    "firebase_url": "https://meal-factory-app.firebaseio.com",
+    "project_id": "meal-factory-app",
+    "storage_bucket": "meal-factory-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129464719628:android:fb8285d9c2df396fe71129",
+        "android_client_info": {
+          "package_name": "com.example.mealfactoryapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129464719628-71l966mjnh332ljkfd3t28nec3cq0ha2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mealfactoryapp",
+            "certificate_hash": "6291b66d3aeb81bc1078030ac1a00ab4a2b7695c"
+          }
+        },
+        {
+          "client_id": "129464719628-d0svniu59ck7vc4o2j7t399ke83i37ir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmZWz9imL-oewFjyZU0-7ukAQEBY7Gykc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129464719628-d0svniu59ck7vc4o2j7t399ke83i37ir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -7,100 +7,80 @@
     tools:context=".Register">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="280dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="44dp"
-        android:orientation="horizontal"
+        android:id="@+id/linearLayout6"
+        android:layout_width="292dp"
+        android:layout_height="352dp"
+        android:layout_marginTop="52dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageButton
-            android:id="@+id/back"
-            android:layout_width="49dp"
-            android:layout_height="match_parent"
-            android:background="@color/colorBackground"
-            android:contentDescription="@string/back_btn"
-            app:srcCompat="?attr/homeAsUpIndicator" />
-
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="68dp"
-            android:layout_height="match_parent"
-            android:contentDescription="@string/logo"
-            app:srcCompat="@drawable/logo" />
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="139dp"
+            app:srcCompat="@drawable/dp" />
 
         <TextView
-            android:id="@+id/app"
-            android:layout_width="160dp"
-            android:layout_height="match_parent"
-            android:text="@string/app"
-            android:textAlignment="center"
-            android:textColor="@color/colorName"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="304dp"
-        android:layout_height="451dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.231">
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/app_name"
-            tools:srcCompat="@tools:sample/avatars" />
-
-        <EditText
             android:id="@+id/name"
             android:layout_width="match_parent"
-            android:layout_height="92dp"
-            android:ems="10"
-            android:inputType="textPersonName"
+            android:layout_height="44dp"
             android:text="@string/name"
-            android:textAlignment="center" />
+            android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/email"
+            android:id="@+id/name1"
             android:layout_width="match_parent"
-            android:layout_height="84dp"
+            android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textEmailAddress"
-            android:text="@string/email"
-            android:textAlignment="center" />
+            android:inputType="textPersonName" />
 
-        <EditText
-            android:id="@+id/password"
+        <TextView
+            android:id="@+id/mobile"
             android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:text="@string/password"
-            android:textAlignment="center" />
-
-        <Button
-            android:id="@+id/next_btn2"
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:background="@color/cardview_light_background"
-            android:shadowColor="@color/cardview_light_background"
-            android:text="@string/next_btn"
-            android:textColor="@color/colorTheme"
+            android:layout_height="45dp"
+            android:text="@string/enter_phone"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            tools:text="@string/mobile" />
+
+        <EditText
+            android:id="@+id/mobile1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone" />
+
     </LinearLayout>
+
+    <Button
+        android:id="@+id/next_btn2"
+        android:layout_width="102dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="48dp"
+        android:background="@color/cardview_light_background"
+        android:shadowColor="@color/cardview_light_background"
+        android:text="@string/next_btn"
+        android:textColor="@color/colorTheme"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="95dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/colorBackground"
+        android:text="@string/back_btn"
+        android:textColor="@color/colorTheme"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

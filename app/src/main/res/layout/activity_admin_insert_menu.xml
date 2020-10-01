@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminInsertMenuActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="372dp"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/home_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorBackground"
+            android:contentDescription="@string/home_btn"
+            app:srcCompat="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/bag_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorBackground"
+            android:contentDescription="@string/bag_btn"
+            app:srcCompat="@drawable/bag" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="368dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.013">
+
+        <Button
+            android:id="@+id/srilankan"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:layout_weight="1"
+            android:background="@color/colorTheme"
+            android:text="@string/srilankan"
+            android:textColor="@color/colorBackground"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/indian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/indian" />
+
+        <Button
+            android:id="@+id/chinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/chinese" />
+
+        <Button
+            android:id="@+id/italian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/indian" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="371dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="49dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:contentDescription="@string/back_btn"
+            app:srcCompat="?attr/homeAsUpIndicator" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/logo"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/app"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:text="@string/app"
+            android:textAlignment="center"
+            android:textColor="@color/colorName"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="388dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.461">
+
+        <TextView
+            android:id="@+id/addNewItem"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="@string/addNewItem"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/insertItem"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/cardview_shadow_end_color"
+            android:ems="10"
+            android:hint="@string/insertItemName"
+            android:inputType="textPersonName"
+            android:text="@string/insertItemName"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/insertItemCode"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/cardview_shadow_end_color"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/insertItemCode"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/insertDescription"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@color/cardview_shadow_end_color"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/insertDescription"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/insertPrice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/cardview_shadow_end_color"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/insertPrice"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/uploadImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/uploadImg"
+            android:textAlignment="center" />
+
+        <ImageButton
+            android:id="@+id/imageUploadButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_upload" />
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTheme"
+            android:text="@string/save_btn"
+            android:textColor="@color/colorBackground" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

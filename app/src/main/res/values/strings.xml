@@ -37,6 +37,21 @@
     <string name="add_btn">Add</string>
     <string name="dlt_btn">Delete</string>
 
-    <string name="para_1">\n\n\n Basmathi Rice\n Devilled Potato\n Dhal Curry\n Chicken Curry\n Vegetable Salad</string>
+    <string name="para_1">\n\n\n Basmathi Rice\n
+                            Devilled Potato\n Dhal Curry\n
+                            Chicken Curry\nVegetable Salad</string>
+    <string name="addMenuBtn">Add Item</string>
+    <string name="edit_btn">Edit</string>
+    <string name="delete_btn">Delete</string>
+    <string name="insertItemName">Item Name</string>
+    <string name="insertDescription">Description</string>
+    <string name="uploadImg">Upload Image</string>
+    <string name="insertPrice">Price</string>
+    <string name="addNewItem">Add New Item</string>
+    <string name="save_btn">Save</string>
+    <string name="insertItemCode">Item Code</string>
+    <string name="login_btn">Login</string>
+    <string name="register_btn">Register</string>
+    <string name="mobile">Mobile number</string>
 
 </resources>

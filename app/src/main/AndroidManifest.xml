@@ -9,20 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Favorites"></activity>
-        <activity android:name=".Recipe" />
-        <activity android:name=".MenuSl" />
-        <activity android:name=".Register" />
-        <activity android:name=".ConfirmLogin" />
-        <activity
-            android:name=".ui.login.LoginActivity"
-            android:label="@string/title_activity_login" />
-        <activity android:name=".Login" />
+        <activity android:name=".AdminViewDeleteRecipeActivity" >
+
+        </activity>
+        <activity android:name=".AdminMenuActivity" >
+
+        </activity>
+        <activity android:name=".AdminInsertMenuActivity" >
+
+        </activity>
+        <activity android:name=".Favorites" >
+
+        </activity>
+        <activity android:name=".Recipe" >
+
+        </activity>
+        <activity android:name=".MenuSl" >
+
+        </activity>
+        <activity android:name=".Register" >
+
+        </activity>
+        <activity android:name=".ConfirmLogin" >
+
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
     </application>
