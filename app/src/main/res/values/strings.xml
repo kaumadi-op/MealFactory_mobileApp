@@ -19,7 +19,7 @@
     <string name="Fav_btn">Favorites</string>
     <string name="profile_btn">Profile</string>
 
-    <string name="Details">Dilivery Details</string>
+    <string name="Details">Delivery Details</string>
     <string name="Payement_btn">Make Payment</string>
 
     <string name="Payment">Payment</string>
@@ -42,5 +42,13 @@
     <string name="expir_date">Expire Date</string>
     <string name="ex_date"></string>
     <string name="pay_btn">Pay</string>
+    <string name="Next">next</string>
+    <string name="show">show</string>
+    <string name="Update">Update</string>
+    <string name="Delete">Delete</string>
+    <string name="enter">Enter</string>
+    <string name="nameoncard">Name on card</string>
+    <string name="date">dd/mm</string>
+    <string name="sec">cvv</string>
 
 </resources>
