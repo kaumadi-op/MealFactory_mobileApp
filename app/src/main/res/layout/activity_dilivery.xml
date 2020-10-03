@@ -104,7 +104,7 @@
         android:layout_width="352dp"
         android:layout_height="223dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -124,7 +124,6 @@
             android:layout_width="match_parent"
             android:layout_height="58dp"
             android:background="@color/colorTheme"
-            android:onClick="update"
             android:text="@string/Update"
             android:textSize="18sp" />
 
@@ -134,6 +133,15 @@
             android:layout_height="wrap_content"
             android:background="@color/colorTheme"
             android:text="@string/Payement_btn"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/show_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTheme"
+            android:text="@string/show"
+            android:textColor="@color/colorBlack"
             android:textSize="24sp" />
 
     </LinearLayout>

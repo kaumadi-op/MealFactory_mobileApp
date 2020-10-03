@@ -25,7 +25,7 @@ public class Delivery {
         return Address;
     }
 
-    public void setAddress(String address) {
+    public  void setAddress(String address) {
         Address = address;
     }
 
@@ -33,7 +33,7 @@ public class Delivery {
         return Location;
     }
 
-    public void setLocation(String location) {
+    public  void setLocation(String location) {
         Location = location;
     }
 
@@ -41,7 +41,7 @@ public class Delivery {
         return ContactNo;
     }
 
-    public void setContactNo(String contactNo) {
+    public  void setContactNo(String contactNo) {
         ContactNo = contactNo;
     }
 }
