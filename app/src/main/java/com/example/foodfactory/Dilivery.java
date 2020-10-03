@@ -39,17 +39,7 @@ public class Dilivery extends AppCompatActivity {
 
         showAllUDeliveryData();
 
-        update.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //public void update(){
-                if (isNameChanged() || islocationchanged() || isaddresschanged() || isphonechanged()){
-                    //Toast.makeText(this, "Data has been updated", Toast.LENGTH_LONG).show();
-               }
-                //else //Toast.makeText(this, "data is same", Toast.LENGTH_LONG).show();
-            }
 
-        });
     }
 
     private void showAllUDeliveryData( ) {
@@ -66,8 +56,16 @@ public class Dilivery extends AppCompatActivity {
         Address.setText(address1);
         Location.setText(location1);
     }
+    public void update(){
+            if (isNameChanged()||islocationchanged()||isaddresschanged()||isphonechanged()
+         ){
+                Toast.makeText(this,"Data has been updated",Toast.LENGTH_LONG).show();
+            }
+            else Toast.makeText(this,"data is same",Toast.LENGTH_LONG).show();
+        }
 
-    private boolean isphonechanged() {
+
+        private boolean isphonechanged() {
         if(!phone1.equals(phone.getEditableText().toString())){
             reference.child(phone1).child("contactNo").setValue(phone.getEditableText().toString());
             return  true;

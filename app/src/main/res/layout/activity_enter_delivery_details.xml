@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/darker_gray"
     android:textAlignment="center"
-    tools:context=".MainActivity">
+    tools:context=".EnterDelivery">
 
     <TextView
         android:id="@+id/textView"

@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -36,7 +38,16 @@ public class paymentMethod extends AppCompatActivity {
             public void onClick(View view) {
                 rootNode = FirebaseDatabase.getInstance();
                 reference = rootNode.getReference("Payment");
-
+                try {
+                    if (TextUtils.isEmpty(name1.getText().toString()))
+                        Toast.makeText(getApplicationContext(), "Please enter a Name", Toast.LENGTH_SHORT).show();
+                    else if (TextUtils.isEmpty(amount1.getText().toString()))
+                        Toast.makeText(getApplicationContext(), "Please enter Your Amount", Toast.LENGTH_SHORT).show();
+                    else if (TextUtils.isEmpty(date1.getText().toString()))
+                        Toast.makeText(getApplicationContext(), "Please enter Your date", Toast.LENGTH_SHORT).show();
+                    else if (TextUtils.isEmpty(phone1.getText().toString()))
+                        Toast.makeText(getApplicationContext(), "Please enter an Phone number", Toast.LENGTH_SHORT).show();
+                    else {
                 String name = name1.getEditableText().toString();
                 String amount = amount1.getEditableText().toString();
                 String date = date1.getEditableText().toString();
@@ -45,6 +56,11 @@ public class paymentMethod extends AppCompatActivity {
                 PaymentHelper payment  = new PaymentHelper(name,amount,date,phone);
 
                 reference.child(phone).setValue(payment);
+                Toast.makeText(getApplicationContext(), "Data Saved Successfully", Toast.LENGTH_SHORT).show();
+                    }
+                } catch (NumberFormatException e) {
+                    Toast.makeText(getApplicationContext(), "Invalid", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

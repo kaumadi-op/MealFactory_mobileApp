@@ -1,15 +1,13 @@
 package com.example.foodfactory;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+import android.widget.Toast;
 
 public class Payment extends AppCompatActivity {
 
@@ -22,6 +20,13 @@ public class Payment extends AppCompatActivity {
         //hooks
         cash = findViewById(R.id.btn1);
         card = findViewById(R.id.button2);
+
+        cash.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(Payment.this, "Thnak You!!,We will get Your order", Toast.LENGTH_LONG).show();
+            }
+        });
     }
     @Override
     protected void onResume() {
