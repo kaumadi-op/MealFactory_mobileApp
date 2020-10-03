@@ -249,7 +249,7 @@
             app:srcCompat="@drawable/logo" />
 
         <TextView
-            android:id="@+id/app"
+            android:id="@+id/myProfile"
             android:layout_width="160dp"
             android:layout_height="match_parent"
             android:text="@string/app"

@@ -1,14 +1,97 @@
 package com.example.mealfactoryapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class ConfirmLogin extends AppCompatActivity {
+
+
+    EditText mobile;
+    Button next_btn, back_btn;
+    DatabaseReference readRef;
+    RegisterUser user;
+
+    int phone;
+
+    public int returnUser(){
+        return phone;
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirm_login);
+
+
+        mobile = findViewById(R.id.mobile);
+        next_btn = findViewById(R.id.next_btn);
+        back_btn = findViewById(R.id.back_btn);
+
+        user = new RegisterUser();
+
+        //set onclick listner to next button
+        next_btn.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View view) {
+
+                                            phone = user.getPhone();
+
+                                            readRef = FirebaseDatabase.getInstance().getReference().child("RegisterUser");
+                                            // Attach a listener to read the data
+                                            readRef.addListenerForSingleValueEvent(new ValueEventListener(){
+
+                                                @Override
+                                                public void onDataChange(DataSnapshot dataSnapshot) {
+                                                    if(dataSnapshot.hasChild("" + phone)){
+                                                        readRef = FirebaseDatabase.getInstance().getReference().child("RegisterUser").child(""+phone);
+
+                                                        Intent Intent = new Intent(ConfirmLogin.this,MenuSl.class);
+                                                        startActivity(Intent);
+
+                                                        Toast.makeText(getApplicationContext(), "Login success!!", Toast.LENGTH_SHORT).show();
+
+                                                    }
+                                                    else{
+                                                        Toast.makeText(getApplicationContext(),"Invalid login",Toast.LENGTH_SHORT).show();
+                                                    }
+
+                                                }
+
+                                                @Override
+                                                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                                                }
+                                            });
+
+
+                                        }
+                                    }
+        );
+
+        //set onclick listner to back button
+        back_btn.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View view) {
+
+                                            Intent Intent = new Intent(ConfirmLogin.this,MainActivity.class);
+                                            startActivity(Intent);
+                                        }
+                                    }
+        );
+
     }
 }

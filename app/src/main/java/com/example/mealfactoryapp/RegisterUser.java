@@ -1,11 +1,12 @@
 package com.example.mealfactoryapp;
 
-public class User {
+public class RegisterUser {
 
     private String Name;
+    private String Email;
     private int Phone;
 
-    public User() {
+    public RegisterUser() {
 
     }
 
@@ -17,6 +18,14 @@ public class User {
         Name = name;
     }
 
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
+    }
+
     public int getPhone() {
         return Phone;
     }
@@ -25,3 +34,4 @@ public class User {
         Phone = phone;
     }
 }
+

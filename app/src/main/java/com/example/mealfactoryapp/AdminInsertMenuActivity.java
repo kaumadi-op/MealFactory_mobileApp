@@ -16,13 +16,16 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class AdminInsertMenuActivity extends AppCompatActivity {
 
-    EditText insertItem, insertItemCode, insertDescription, insertPrice;
+    EditText insertItem, insertItemCode, insertDescription, insertPrice, insertType;
     Button save_btn, imageUploadButton;
     DatabaseReference dbRef;
     adminRecipe recipe;
+    int count = 1;
+    String type;
 
     private void clearControls(){
         insertItem.setText("");
+        insertType.setText("");
         insertItemCode.setText("");
         insertDescription.setText("");
         insertPrice.setText("");
@@ -35,6 +38,7 @@ public class AdminInsertMenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_admin_insert_menu);
 
         insertItem = findViewById(R.id.insertItem);
+        insertType = findViewById(R.id.insertType);
         insertItemCode = findViewById(R.id.insertItemCode);
         insertDescription = findViewById(R.id.insertDescription);
         insertPrice = findViewById(R.id.insertPrice);
@@ -54,6 +58,8 @@ public class AdminInsertMenuActivity extends AppCompatActivity {
                                            try{
                                                if (TextUtils.isEmpty(insertItem.getText().toString()))
                                                    Toast.makeText(getApplicationContext(), "Insert Item Name", Toast.LENGTH_SHORT).show();
+                                               else if (TextUtils.isEmpty(insertType.getText().toString()))
+                                                   Toast.makeText(getApplicationContext(), "Insert Item Code", Toast.LENGTH_SHORT).show();
                                                else if (TextUtils.isEmpty(insertItemCode.getText().toString()))
                                                    Toast.makeText(getApplicationContext(), "Insert Item Code", Toast.LENGTH_SHORT).show();
                                                else if (TextUtils.isEmpty(insertDescription.getText().toString()))
@@ -63,20 +69,21 @@ public class AdminInsertMenuActivity extends AppCompatActivity {
                                                else{
                                                    //Take inputs from the user and assigning them to this instance (recipe) of the adminRecipe
                                                    recipe.setName(insertItem.getText().toString().trim());
+                                                   recipe.setType(insertType.getText().toString().trim());
                                                    recipe.setCode(insertItemCode.getText().toString().trim());
                                                    recipe.setDescription(insertDescription.getText().toString().trim());
                                                    recipe.setPrice(insertPrice.getText().toString().trim());
 
                                                    //Insert in to the database
-                                                   dbRef.push().setValue(recipe);
+                                                   type = recipe.getType();
+                                                   dbRef.child("" + type + count).setValue(recipe);
+                                                   count++;
 
                                                    //Feedback to the user via a Toast
                                                    Toast.makeText(getApplicationContext(), "Data saved successfully", Toast.LENGTH_SHORT).show();
                                                    clearControls();
 
-
                                                }
-
 
                                            }
 
@@ -86,8 +93,6 @@ public class AdminInsertMenuActivity extends AppCompatActivity {
                                            }
                                        }
                                    }
-
-
         );
 
     }

@@ -3,6 +3,7 @@ package com.example.mealfactoryapp;
 public class adminRecipe {
 
     private String Name;
+    private String Type;
     private String Code;
     private String Description;
     private String Price;
@@ -16,6 +17,14 @@ public class adminRecipe {
 
     public void setName(String name) {
         Name = name;
+    }
+
+    public String getType() {
+        return Type;
+    }
+
+    public void setType(String type) {
+        Type = type;
     }
 
     public String getCode() {

@@ -8,8 +8,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout6"
-        android:layout_width="292dp"
-        android:layout_height="352dp"
+        android:layout_width="280dp"
+        android:layout_height="420dp"
         android:layout_marginTop="52dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +41,7 @@
             android:id="@+id/mobile"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:text="@string/enter_phone"
+            android:text="@string/mobile"
             android:textSize="18sp"
             tools:text="@string/mobile" />
 
@@ -51,6 +51,19 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="@string/email" />
+
+        <EditText
+            android:id="@+id/email1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
 
     </LinearLayout>
 

@@ -53,5 +53,11 @@
     <string name="login_btn">Login</string>
     <string name="register_btn">Register</string>
     <string name="mobile">Mobile number</string>
+    <string name="myProfile">My Profile</string>
+    <string name="update_btn">Update Profile</string>
+    <string name="deleteProf_btn">Delete Profile</string>
+    <string name="show_btn">Show</string>
+    <string name="show_btn_">View Profile</string>
+    <string name="insertType">Item Type</string>
 
 </resources>

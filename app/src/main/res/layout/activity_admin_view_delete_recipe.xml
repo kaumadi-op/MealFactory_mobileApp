@@ -90,7 +90,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/edit_btn"
+            android:id="@+id/order_btn"
             android:layout_width="match_parent"
             android:layout_height="69dp"
             android:background="@color/colorTheme"
@@ -106,7 +106,7 @@
             android:layout_height="wrap_content" />
 
         <Button
-            android:id="@+id/delete_btn"
+            android:id="@+id/deleteProf_btn"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:background="@color/colorTheme"
@@ -189,7 +189,7 @@
             app:srcCompat="@drawable/logo" />
 
         <TextView
-            android:id="@+id/app"
+            android:id="@+id/myProfile"
             android:layout_width="160dp"
             android:layout_height="match_parent"
             android:text="@string/app"
