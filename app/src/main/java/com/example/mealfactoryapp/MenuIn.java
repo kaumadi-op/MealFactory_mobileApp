@@ -1,6 +1,5 @@
 package com.example.mealfactoryapp;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,27 +9,55 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class Recipe extends AppCompatActivity {
+public class MenuIn extends AppCompatActivity {
 
-    Button order_btn, srilankan, indian, chinese, italian;
+    Button srilankan, indian, chinese, italian, view_btn1, view_btn2;
     ImageButton home_btn, bag_btn, favorite_btn, profile_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recipe);
+        setContentView(R.layout.activity_menu_in);
 
         srilankan = findViewById(R.id.srilankan);
         indian = findViewById(R.id.indian);
         chinese = findViewById(R.id.chinese);
         italian = findViewById(R.id.italian);
+        view_btn1 = findViewById(R.id.view_btn1);
+        view_btn2 = findViewById(R.id.view_btn2);
 
         home_btn = findViewById(R.id.home_btn);
         bag_btn = findViewById(R.id.bag_btn);
         favorite_btn = findViewById(R.id.favorite_btn);
         profile_btn = findViewById(R.id.profile_btn);
 
-        order_btn = findViewById(R.id.order_btn);
+        view_btn1.setOnClickListener(new View.OnClickListener(){
+
+                                         @Override
+                                         public void onClick(View v){
+
+                                             Intent Intent = new Intent (MenuIn.this,Recipe.class);
+                                             startActivity(Intent);
+
+                                             Log.i("lifecycle", "onClick method invoked");
+
+                                         }
+                                     }
+        );
+
+        view_btn2.setOnClickListener(new View.OnClickListener(){
+
+                                         @Override
+                                         public void onClick(View v){
+
+                                             Intent Intent = new Intent (MenuIn.this,Recipe.class);
+                                             startActivity(Intent);
+
+                                             Log.i("lifecycle", "onClick method invoked");
+
+                                         }
+                                     }
+        );
 
 
         srilankan.setOnClickListener(new View.OnClickListener(){
@@ -38,7 +65,7 @@ public class Recipe extends AppCompatActivity {
                                          @Override
                                          public void onClick(View v){
 
-                                             Intent Intent = new Intent (Recipe.this,MenuSl.class);
+                                             Intent Intent = new Intent (MenuIn.this,MenuSl.class);
                                              startActivity(Intent);
 
                                              Log.i("lifecycle", "onClick method invoked");
@@ -52,7 +79,7 @@ public class Recipe extends AppCompatActivity {
                                       @Override
                                       public void onClick(View v){
 
-                                          Intent Intent = new Intent (Recipe.this,MenuSl.class);
+                                          Intent Intent = new Intent (MenuIn.this,MenuSl.class);
                                           startActivity(Intent);
 
                                           Log.i("lifecycle", "onClick method invoked");
@@ -65,7 +92,7 @@ public class Recipe extends AppCompatActivity {
                                        @Override
                                        public void onClick(View v){
 
-                                           Intent Intent = new Intent (Recipe.this,MenuSl.class);
+                                           Intent Intent = new Intent (MenuIn.this,MenuSl.class);
                                            startActivity(Intent);
 
                                            Log.i("lifecycle", "onClick method invoked");
@@ -78,7 +105,7 @@ public class Recipe extends AppCompatActivity {
                                        @Override
                                        public void onClick(View v){
 
-                                           Intent Intent = new Intent (Recipe.this,MenuSl.class);
+                                           Intent Intent = new Intent (MenuIn.this,MenuSl.class);
                                            startActivity(Intent);
 
                                            Log.i("lifecycle", "onClick method invoked");
@@ -92,7 +119,7 @@ public class Recipe extends AppCompatActivity {
                                         @Override
                                         public void onClick(View v){
 
-                                            Intent Intent = new Intent (Recipe.this,MenuSl.class);
+                                            Intent Intent = new Intent (MenuIn.this,MenuSl.class);
                                             startActivity(Intent);
 
                                             Log.i("lifecycle", "onClick method invoked");
@@ -106,7 +133,7 @@ public class Recipe extends AppCompatActivity {
                                        @Override
                                        public void onClick(View v){
 
-                                           Intent Intent = new Intent (Recipe.this,MenuSl.class);
+                                           Intent Intent = new Intent (MenuIn.this,MenuSl.class);
                                            startActivity(Intent);
 
                                            Log.i("lifecycle", "onClick method invoked");
@@ -120,7 +147,7 @@ public class Recipe extends AppCompatActivity {
                                             @Override
                                             public void onClick(View v){
 
-                                                Intent Intent = new Intent (Recipe.this,Favorites.class);
+                                                Intent Intent = new Intent (MenuIn.this,Favorites.class);
                                                 startActivity(Intent);
 
                                                 Log.i("lifecycle", "onClick method invoked");
@@ -134,7 +161,7 @@ public class Recipe extends AppCompatActivity {
                                            @Override
                                            public void onClick(View v){
 
-                                               Intent Intent = new Intent (Recipe.this,MyProfile.class);
+                                               Intent Intent = new Intent (MenuIn.this,MyProfile.class);
                                                startActivity(Intent);
 
                                                Log.i("lifecycle", "onClick method invoked");

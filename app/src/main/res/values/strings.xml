@@ -60,5 +60,7 @@
     <string name="show_btn_">View Profile</string>
     <string name="insertType">Item Type</string>
     <string name="textView">Register to Meal Factory</string>
+    <string name="recipe_in1">Chicken Biriyani</string>
+    <string name="recipe_in2">Masala Dosa</string>
 
 </resources>

@@ -14,6 +14,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 public class ConfirmLogin extends AppCompatActivity {
@@ -25,11 +26,6 @@ public class ConfirmLogin extends AppCompatActivity {
     RegisterUser user;
 
     int phone;
-
-    public int returnUser(){
-        return phone;
-    }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +44,8 @@ public class ConfirmLogin extends AppCompatActivity {
                                         @Override
                                         public void onClick(View view) {
 
-                                            //phone = user.getPhone();
+                                            phone = user.getPhone();
+                                            final String ph = Integer.toString(phone);
 
                                             readRef = FirebaseDatabase.getInstance().getReference().child("RegisterUser");
                                             // Attach a listener to read the data
@@ -56,8 +53,8 @@ public class ConfirmLogin extends AppCompatActivity {
 
                                                 @Override
                                                 public void onDataChange(DataSnapshot dataSnapshot) {
-                                                    if(dataSnapshot.hasChild("777654321" )){
-                                                        readRef = FirebaseDatabase.getInstance().getReference().child("RegisterUser").child("777654321");
+                                                    if(dataSnapshot.hasChild("777654321") ){
+                                                        readRef = FirebaseDatabase.getInstance().getReference().child("RegisterUser").child(ph);
 
                                                         Intent Intent = new Intent(ConfirmLogin.this,MenuSl.class);
                                                         startActivity(Intent);

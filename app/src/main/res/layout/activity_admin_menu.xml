@@ -69,7 +69,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/recipe1"
+                    android:id="@+id/recipe_in1"
                     android:layout_width="match_parent"
                     android:layout_height="38dp"
                     android:text="@string/recipe1"
@@ -78,7 +78,7 @@
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/price2"
+                    android:id="@+id/price1"
                     android:layout_width="match_parent"
                     android:layout_height="32dp"
                     android:text="@string/price1"
@@ -86,7 +86,7 @@
                     android:textColor="@color/colorBlack" />
 
                 <Button
-                    android:id="@+id/view_btn"
+                    android:id="@+id/view_btn1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/colorBackground"
@@ -116,7 +116,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/recipe2"
+                    android:id="@+id/recipe_in1"
                     android:layout_width="match_parent"
                     android:layout_height="54dp"
                     android:text="@string/recipe2"
@@ -125,7 +125,7 @@
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/price2"
+                    android:id="@+id/price1"
                     android:layout_width="match_parent"
                     android:layout_height="33dp"
                     android:text="@string/price2"
@@ -133,7 +133,7 @@
                     android:textColor="@color/colorBlack" />
 
                 <Button
-                    android:id="@+id/view_btn"
+                    android:id="@+id/view_btn1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/colorBackground"
@@ -181,7 +181,7 @@
                     android:textColor="@color/colorBlack" />
 
                 <Button
-                    android:id="@+id/view_btn"
+                    android:id="@+id/view_btn1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/colorBackground"
@@ -229,7 +229,7 @@
                     android:textColor="@color/colorBlack" />
 
                 <Button
-                    android:id="@+id/view_btn"
+                    android:id="@+id/view_btn1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/colorBackground"
