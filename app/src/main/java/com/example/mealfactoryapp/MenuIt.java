@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class MenuCh extends AppCompatActivity {
+public class MenuIt extends AppCompatActivity {
 
     Button srilankan, indian, chinese, italian, order_btn;
     ImageButton home_btn, bag_btn, favorite_btn, profile_btn;
@@ -18,7 +18,7 @@ public class MenuCh extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_ch);
+        setContentView(R.layout.activity_menu_it);
 
         srilankan = findViewById(R.id.srilankan);
         indian = findViewById(R.id.indian);
@@ -36,7 +36,7 @@ public class MenuCh extends AppCompatActivity {
                                          @Override
                                          public void onClick(View v){
 
-                                             Intent Intent = new Intent (MenuCh.this,MenuCh.class);
+                                             Intent Intent = new Intent (MenuIt.this,MenuSl.class);
                                              startActivity(Intent);
 
                                              Log.i("lifecycle", "onClick method invoked");
@@ -45,12 +45,14 @@ public class MenuCh extends AppCompatActivity {
                                      }
         );
 
+
+
         srilankan.setOnClickListener(new View.OnClickListener(){
 
                                          @Override
                                          public void onClick(View v){
 
-                                             Intent Intent = new Intent (MenuCh.this,MenuSl.class);
+                                             Intent Intent = new Intent (MenuIt.this,MenuSl.class);
                                              startActivity(Intent);
 
                                              Log.i("lifecycle", "onClick method invoked");
@@ -64,7 +66,7 @@ public class MenuCh extends AppCompatActivity {
                                       @Override
                                       public void onClick(View v){
 
-                                          Intent Intent = new Intent (MenuCh.this,MenuIn.class);
+                                          Intent Intent = new Intent (MenuIt.this,MenuIn.class);
                                           startActivity(Intent);
 
                                           Log.i("lifecycle", "onClick method invoked");
@@ -77,7 +79,7 @@ public class MenuCh extends AppCompatActivity {
                                        @Override
                                        public void onClick(View v){
 
-                                           Intent Intent = new Intent (MenuCh.this,MenuCh.class);
+                                           Intent Intent = new Intent (MenuIt.this,MenuCh.class);
                                            startActivity(Intent);
 
                                            Log.i("lifecycle", "onClick method invoked");
@@ -90,7 +92,7 @@ public class MenuCh extends AppCompatActivity {
                                        @Override
                                        public void onClick(View v){
 
-                                           Intent Intent = new Intent (MenuCh.this,MenuIt.class);
+                                           Intent Intent = new Intent (MenuIt.this,MenuIt.class);
                                            startActivity(Intent);
 
                                            Log.i("lifecycle", "onClick method invoked");
@@ -104,7 +106,7 @@ public class MenuCh extends AppCompatActivity {
                                         @Override
                                         public void onClick(View v){
 
-                                            Intent Intent = new Intent (MenuCh.this,MenuSl.class);
+                                            Intent Intent = new Intent (MenuIt.this,MenuSl.class);
                                             startActivity(Intent);
 
                                             Log.i("lifecycle", "onClick method invoked");
@@ -118,7 +120,7 @@ public class MenuCh extends AppCompatActivity {
                                        @Override
                                        public void onClick(View v){
 
-                                           Intent Intent = new Intent (MenuCh.this,MenuSl.class);
+                                           Intent Intent = new Intent (MenuIt.this,MenuSl.class);
                                            startActivity(Intent);
 
                                            Log.i("lifecycle", "onClick method invoked");
@@ -132,7 +134,7 @@ public class MenuCh extends AppCompatActivity {
                                             @Override
                                             public void onClick(View v){
 
-                                                Intent Intent = new Intent (MenuCh.this,Favorites.class);
+                                                Intent Intent = new Intent (MenuIt.this,Favorites.class);
                                                 startActivity(Intent);
 
                                                 Log.i("lifecycle", "onClick method invoked");
@@ -146,7 +148,7 @@ public class MenuCh extends AppCompatActivity {
                                            @Override
                                            public void onClick(View v){
 
-                                               Intent Intent = new Intent (MenuCh.this,MyProfile.class);
+                                               Intent Intent = new Intent (MenuIt.this,MyProfile.class);
                                                startActivity(Intent);
 
                                                Log.i("lifecycle", "onClick method invoked");

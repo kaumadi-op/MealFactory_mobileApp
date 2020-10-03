@@ -9,11 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-import com.google.firebase.database.DatabaseReference;
-
 public class MenuSl extends AppCompatActivity {
 
-    Button srilankan, indian, chinese, italian, view_btn1, view_btn2;
+    Button srilankan, indian, chinese, italian, order_btn;
     ImageButton home_btn, bag_btn, favorite_btn, profile_btn;
 
 
@@ -26,20 +24,19 @@ public class MenuSl extends AppCompatActivity {
         indian = findViewById(R.id.indian);
         chinese = findViewById(R.id.chinese);
         italian = findViewById(R.id.italian);
-        view_btn1 = findViewById(R.id.view_btn1);
-        view_btn2 = findViewById(R.id.view_btn2);
+        order_btn = findViewById(R.id.order_btn);
 
         home_btn = findViewById(R.id.home_btn);
         bag_btn = findViewById(R.id.bag_btn);
         favorite_btn = findViewById(R.id.favorite_btn);
         profile_btn = findViewById(R.id.profile_btn);
 
-        view_btn1.setOnClickListener(new View.OnClickListener(){
+        order_btn.setOnClickListener(new View.OnClickListener(){
 
                                          @Override
                                          public void onClick(View v){
 
-                                             Intent Intent = new Intent (MenuSl.this,Recipe.class);
+                                             Intent Intent = new Intent (MenuSl.this,MenuSl.class);
                                              startActivity(Intent);
 
                                              Log.i("lifecycle", "onClick method invoked");
@@ -48,19 +45,6 @@ public class MenuSl extends AppCompatActivity {
                                      }
         );
 
-        view_btn2.setOnClickListener(new View.OnClickListener(){
-
-                                         @Override
-                                         public void onClick(View v){
-
-                                             Intent Intent = new Intent (MenuSl.this,Recipe.class);
-                                             startActivity(Intent);
-
-                                             Log.i("lifecycle", "onClick method invoked");
-
-                                         }
-                                     }
-        );
 
 
         srilankan.setOnClickListener(new View.OnClickListener(){
@@ -82,7 +66,7 @@ public class MenuSl extends AppCompatActivity {
                                            @Override
                                            public void onClick(View v){
 
-                                               Intent Intent = new Intent (MenuSl.this,MenuSl.class);
+                                               Intent Intent = new Intent (MenuSl.this,MenuIn.class);
                                                startActivity(Intent);
 
                                                Log.i("lifecycle", "onClick method invoked");
@@ -95,7 +79,7 @@ public class MenuSl extends AppCompatActivity {
                                            @Override
                                            public void onClick(View v){
 
-                                               Intent Intent = new Intent (MenuSl.this,MenuSl.class);
+                                               Intent Intent = new Intent (MenuSl.this,MenuCh.class);
                                                startActivity(Intent);
 
                                                Log.i("lifecycle", "onClick method invoked");
@@ -108,7 +92,7 @@ public class MenuSl extends AppCompatActivity {
                                            @Override
                                            public void onClick(View v){
 
-                                               Intent Intent = new Intent (MenuSl.this,MenuSl.class);
+                                               Intent Intent = new Intent (MenuSl.this,MenuIt.class);
                                                startActivity(Intent);
 
                                                Log.i("lifecycle", "onClick method invoked");

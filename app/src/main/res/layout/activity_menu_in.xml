@@ -161,7 +161,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/recipe_ch1"
+                    android:id="@+id/recipe_it1"
                     android:layout_width="match_parent"
                     android:layout_height="38dp"
                     android:text="@string/recipe_in1"
@@ -178,11 +178,11 @@
                     android:textColor="@color/colorBlack" />
 
                 <Button
-                    android:id="@+id/view_btn1"
+                    android:id="@+id/order_btn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/colorBackground"
-                    android:text="@string/view_btn"
+                    android:text="@string/order_btn"
                     android:textAlignment="center"
                     android:textColor="@color/colorTheme" />
             </LinearLayout>
@@ -208,7 +208,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/recipe_ch2"
+                    android:id="@+id/recipe_it2"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:text="@string/recipe_in2"
@@ -225,11 +225,11 @@
                     android:textColor="@color/colorBlack" />
 
                 <Button
-                    android:id="@+id/view_btn2"
+                    android:id="@+id/order_btn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/cardview_shadow_end_color"
-                    android:text="@string/view_btn"
+                    android:text="@string/order_btn"
                     android:textColor="@color/colorTheme" />
             </LinearLayout>
         </LinearLayout>

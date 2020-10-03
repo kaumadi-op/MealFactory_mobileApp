@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuSl">
+    tools:context=".MenuIt">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -53,12 +53,9 @@
         <Button
             android:id="@+id/srilankan"
             android:layout_width="wrap_content"
-            android:layout_height="51dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/colorBackground"
-            android:text="@string/srilankan"
-            android:textColor="@color/colorTheme"
-            android:textStyle="bold" />
+            android:text="@string/srilankan" />
 
         <Button
             android:id="@+id/indian"
@@ -79,7 +76,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/italian" />
+            android:background="@color/cardview_shadow_end_color"
+            android:text="@string/italian"
+            android:textColor="@color/colorTheme" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -149,10 +149,10 @@
             <ImageView
                 android:id="@+id/sl1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="109dp"
                 android:layout_weight="1"
                 android:contentDescription="@string/recipe1"
-                app:srcCompat="@drawable/egg_rice___curry" />
+                app:srcCompat="@drawable/pasta" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -163,8 +163,8 @@
                 <TextView
                     android:id="@+id/recipe_it1"
                     android:layout_width="match_parent"
-                    android:layout_height="38dp"
-                    android:text="@string/recipe1"
+                    android:layout_height="47dp"
+                    android:text="@string/recipe_it1"
                     android:textAlignment="center"
                     android:textColor="@color/colorBlack"
                     android:textSize="18sp" />
@@ -199,7 +199,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:contentDescription="@string/recipe2"
-                app:srcCompat="@drawable/chicken_rice___curry" />
+                app:srcCompat="@drawable/lasagna" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -211,7 +211,7 @@
                     android:id="@+id/recipe_it2"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:text="@string/recipe2"
+                    android:text="@string/recipe_it2"
                     android:textAlignment="center"
                     android:textColor="@color/colorBlack"
                     android:textSize="18sp" />
@@ -235,5 +235,4 @@
         </LinearLayout>
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

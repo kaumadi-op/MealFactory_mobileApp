@@ -39,7 +39,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/recipe_ch1"
+                    android:id="@+id/recipe_it1"
                     android:layout_width="match_parent"
                     android:layout_height="38dp"
                     android:text="@string/recipe1"
@@ -48,7 +48,7 @@
                     android:textSize="18sp" />
 
                 <Button
-                    android:id="@+id/view_btn1"
+                    android:id="@+id/order_btn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/colorBackground"
@@ -78,7 +78,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/recipe_ch1"
+                    android:id="@+id/recipe_it1"
                     android:layout_width="match_parent"
                     android:layout_height="53dp"
                     android:text="@string/recipe2"
@@ -87,7 +87,7 @@
                     android:textSize="18sp" />
 
                 <Button
-                    android:id="@+id/view_btn1"
+                    android:id="@+id/order_btn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/colorBackground"
@@ -127,7 +127,7 @@
                     android:textSize="18sp" />
 
                 <Button
-                    android:id="@+id/view_btn1"
+                    android:id="@+id/order_btn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/colorBackground"

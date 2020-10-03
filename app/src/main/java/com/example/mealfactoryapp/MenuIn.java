@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 
 public class MenuIn extends AppCompatActivity {
 
-    Button srilankan, indian, chinese, italian, view_btn1, view_btn2;
+    Button srilankan, indian, chinese, italian, order_btn;
     ImageButton home_btn, bag_btn, favorite_btn, profile_btn;
 
     @Override
@@ -23,34 +23,19 @@ public class MenuIn extends AppCompatActivity {
         indian = findViewById(R.id.indian);
         chinese = findViewById(R.id.chinese);
         italian = findViewById(R.id.italian);
-        view_btn1 = findViewById(R.id.view_btn1);
-        view_btn2 = findViewById(R.id.view_btn2);
+        order_btn = findViewById(R.id.order_btn);
 
         home_btn = findViewById(R.id.home_btn);
         bag_btn = findViewById(R.id.bag_btn);
         favorite_btn = findViewById(R.id.favorite_btn);
         profile_btn = findViewById(R.id.profile_btn);
 
-        view_btn1.setOnClickListener(new View.OnClickListener(){
+        order_btn.setOnClickListener(new View.OnClickListener(){
 
                                          @Override
                                          public void onClick(View v){
 
-                                             Intent Intent = new Intent (MenuIn.this,Recipe.class);
-                                             startActivity(Intent);
-
-                                             Log.i("lifecycle", "onClick method invoked");
-
-                                         }
-                                     }
-        );
-
-        view_btn2.setOnClickListener(new View.OnClickListener(){
-
-                                         @Override
-                                         public void onClick(View v){
-
-                                             Intent Intent = new Intent (MenuIn.this,Recipe.class);
+                                             Intent Intent = new Intent (MenuIn.this,MenuIn.class);
                                              startActivity(Intent);
 
                                              Log.i("lifecycle", "onClick method invoked");
@@ -79,7 +64,7 @@ public class MenuIn extends AppCompatActivity {
                                       @Override
                                       public void onClick(View v){
 
-                                          Intent Intent = new Intent (MenuIn.this,MenuSl.class);
+                                          Intent Intent = new Intent (MenuIn.this,MenuIn.class);
                                           startActivity(Intent);
 
                                           Log.i("lifecycle", "onClick method invoked");
@@ -92,7 +77,7 @@ public class MenuIn extends AppCompatActivity {
                                        @Override
                                        public void onClick(View v){
 
-                                           Intent Intent = new Intent (MenuIn.this,MenuSl.class);
+                                           Intent Intent = new Intent (MenuIn.this,MenuCh.class);
                                            startActivity(Intent);
 
                                            Log.i("lifecycle", "onClick method invoked");
@@ -105,7 +90,7 @@ public class MenuIn extends AppCompatActivity {
                                        @Override
                                        public void onClick(View v){
 
-                                           Intent Intent = new Intent (MenuIn.this,MenuSl.class);
+                                           Intent Intent = new Intent (MenuIn.this,MenuIt.class);
                                            startActivity(Intent);
 
                                            Log.i("lifecycle", "onClick method invoked");
