@@ -69,7 +69,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/recipe_in1"
+                    android:id="@+id/recipe_ch1"
                     android:layout_width="match_parent"
                     android:layout_height="38dp"
                     android:text="@string/recipe1"
@@ -116,7 +116,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/recipe_in1"
+                    android:id="@+id/recipe_ch1"
                     android:layout_width="match_parent"
                     android:layout_height="54dp"
                     android:text="@string/recipe2"

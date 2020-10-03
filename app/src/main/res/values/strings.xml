@@ -62,5 +62,7 @@
     <string name="textView">Register to Meal Factory</string>
     <string name="recipe_in1">Chicken Biriyani</string>
     <string name="recipe_in2">Masala Dosa</string>
+    <string name="recipe_ch1">Egg Fried Rice</string>
+    <string name="recipe_ch2">Chinese soy souce noodles</string>
 
 </resources>

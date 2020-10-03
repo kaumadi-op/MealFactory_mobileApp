@@ -47,7 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <TextView
-            android:id="@+id/recipe_in1"
+            android:id="@+id/recipe_ch1"
             android:layout_width="match_parent"
             android:layout_height="32dp"
             android:text="@string/recipe2"
