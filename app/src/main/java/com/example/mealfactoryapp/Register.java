@@ -13,6 +13,8 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import static java.sql.Types.NULL;
+
 public class Register extends AppCompatActivity {
 
     EditText name1, mobile1, email1;
@@ -22,12 +24,18 @@ public class Register extends AppCompatActivity {
 
     int phone;
 
+    public int returnUser(){
+        return phone;
+    }
+
     private void clearControls(){
         name1.setText("");
         mobile1.setText("");
         email1.setText("");
 
     }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,10 +72,7 @@ public class Register extends AppCompatActivity {
 
                                                     //Insert in to the database
                                                     phone = user1.getPhone();
-
                                                     dbRef.child("" + phone).setValue(user1);
-
-
 
                                                     //Feedback to the user via a Toast
                                                     Toast.makeText(getApplicationContext(), "Data saved successfully", Toast.LENGTH_SHORT).show();
@@ -75,10 +80,16 @@ public class Register extends AppCompatActivity {
 
                                                 }
 
-                                                Intent Intent = new Intent (Register.this,MenuSl.class);
-                                                startActivity(Intent);
+                                                if(phone != NULL){
+                                                    Intent Intent = new Intent (Register.this,MenuSl.class);
+                                                    startActivity(Intent);
 
+                                                    returnUser();
+                                                }
+                                                else{
+                                                    Toast.makeText(getApplicationContext(), "Please enter details to register", Toast.LENGTH_SHORT).show();
 
+                                                }
                                             }
 
                                             catch(NumberFormatException e){

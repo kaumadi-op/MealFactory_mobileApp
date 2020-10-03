@@ -19,7 +19,7 @@ import com.google.firebase.database.ValueEventListener;
 public class ConfirmLogin extends AppCompatActivity {
 
 
-    EditText mobile;
+    EditText mobile_enter;
     Button next_btn, back_btn;
     DatabaseReference readRef;
     RegisterUser user;
@@ -37,7 +37,7 @@ public class ConfirmLogin extends AppCompatActivity {
         setContentView(R.layout.activity_confirm_login);
 
 
-        mobile = findViewById(R.id.mobile);
+        mobile_enter = findViewById(R.id.mobile_enter);
         next_btn = findViewById(R.id.next_btn);
         back_btn = findViewById(R.id.back_btn);
 
@@ -48,7 +48,7 @@ public class ConfirmLogin extends AppCompatActivity {
                                         @Override
                                         public void onClick(View view) {
 
-                                            phone = user.getPhone();
+                                            //phone = user.getPhone();
 
                                             readRef = FirebaseDatabase.getInstance().getReference().child("RegisterUser");
                                             // Attach a listener to read the data
@@ -56,8 +56,8 @@ public class ConfirmLogin extends AppCompatActivity {
 
                                                 @Override
                                                 public void onDataChange(DataSnapshot dataSnapshot) {
-                                                    if(dataSnapshot.hasChild("" + phone)){
-                                                        readRef = FirebaseDatabase.getInstance().getReference().child("RegisterUser").child(""+phone);
+                                                    if(dataSnapshot.hasChild("777654321" )){
+                                                        readRef = FirebaseDatabase.getInstance().getReference().child("RegisterUser").child("777654321");
 
                                                         Intent Intent = new Intent(ConfirmLogin.this,MenuSl.class);
                                                         startActivity(Intent);

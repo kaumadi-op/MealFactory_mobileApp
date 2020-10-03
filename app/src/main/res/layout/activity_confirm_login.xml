@@ -86,13 +86,12 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/mobile"
+            android:id="@+id/mobile_enter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="phone"
-            android:textColor="@color/colorBlack"
-            tools:text="@string/phone" />
+            android:inputType="phone" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

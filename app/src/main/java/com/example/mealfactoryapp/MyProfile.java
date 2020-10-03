@@ -21,25 +21,26 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MyProfile extends AppCompatActivity {
 
-    TextView name, email, mobile;
     EditText editTextTextPersonName, editTextTextEmailAddress,editTextPhone;
     Button show_btn,update_btn, deleteProf_btn;
     ImageButton home_btn, bag_btn, favorite_btn, profile_btn;
-    DatabaseReference dbRef, upRef;
+    DatabaseReference dbRef, upRef, delRef;
     RegisterUser user1;
+    Register user;
     ConfirmLogin log1;
 
     int phone;
+
+    public int getUser(){
+        phone = user.returnUser();
+        return phone;
+    }
 
     private void clearControls(){
         editTextTextPersonName.setText("");
         editTextTextEmailAddress.setText("");
         editTextPhone.setText("");
 
-    }
-
-    private int getUser(){
-        return phone = log1.returnUser();
     }
 
     @Override
@@ -66,9 +67,9 @@ public class MyProfile extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                getUser();
+                //getUser();
                 // Get a reference to our posts
-                dbRef = FirebaseDatabase.getInstance().getReference().child("RegisterUser").child(""+ phone);
+                dbRef = FirebaseDatabase.getInstance().getReference().child("RegisterUser").child("777654322");
                 // Attach a listener to read the data
                 dbRef.addListenerForSingleValueEvent(new ValueEventListener(){
                     @Override
@@ -103,13 +104,13 @@ public class MyProfile extends AppCompatActivity {
                                               upRef.addListenerForSingleValueEvent(new ValueEventListener() {
                                                   @Override
                                                   public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                                                      if(dataSnapshot.hasChild("" + phone)){
+                                                      if(dataSnapshot.hasChild("777654322")){
                                                           try{
                                                               user1.setName(editTextTextPersonName.getText().toString().trim());
                                                               user1.setPhone(Integer.parseInt(editTextPhone.getText().toString().trim()));
                                                               user1.setEmail(editTextTextEmailAddress.getText().toString().trim());
 
-                                                              upRef = FirebaseDatabase.getInstance().getReference().child("RegisterUser").child(""+phone);
+                                                              upRef = FirebaseDatabase.getInstance().getReference().child("RegisterUser").child("777654322");
                                                               upRef.setValue(user1);
 
                                                               Toast.makeText(getApplicationContext(), "Data updated successfully", Toast.LENGTH_SHORT).show();
@@ -124,6 +125,48 @@ public class MyProfile extends AppCompatActivity {
                                                       }
                                                       else{
                                                           Toast.makeText(getApplicationContext(),"No source to Update",Toast.LENGTH_SHORT).show();
+                                                      }
+                                                  }
+
+                                                  @Override
+                                                  public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                                                  }
+                                              });
+
+                                          }
+                                      }
+
+        );
+
+        deleteProf_btn.setOnClickListener(new View.OnClickListener() {
+                                          @Override
+                                          public void onClick(View view) {
+                                              delRef = FirebaseDatabase.getInstance().getReference().child("RegisterUser");
+                                              delRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                                                  @Override
+                                                  public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                                      if(dataSnapshot.hasChild("777654322")){
+                                                          try{
+                                                              delRef = FirebaseDatabase.getInstance().getReference().child("RegisterUser").child("777654322");
+                                                              delRef.removeValue();
+                                                              clearControls();
+
+                                                              Toast.makeText(getApplicationContext(), "Account deleted", Toast.LENGTH_SHORT).show();
+
+                                                              Intent Intent = new Intent(MyProfile.this,MainActivity.class);
+                                                              startActivity(Intent);
+
+
+                                                          }
+                                                          catch(NullPointerException e){
+                                                              Toast.makeText(getApplicationContext(), "Invalid", Toast.LENGTH_SHORT).show();
+
+                                                          }
+
+                                                      }
+                                                      else{
+                                                          Toast.makeText(getApplicationContext(),"No source to Delete",Toast.LENGTH_SHORT).show();
                                                       }
                                                   }
 

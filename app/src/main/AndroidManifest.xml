@@ -12,18 +12,20 @@
         <activity android:name=".MyProfile">
 
         </activity>
-        <activity android:name=".AdminViewDeleteRecipeActivity"></activity>
-        <activity android:name=".AdminMenuActivity"></activity>
+        <activity android:name=".AdminViewDeleteRecipeActivity">
+
+        </activity>
+        <activity android:name=".AdminMenuActivity">
+
+        </activity>
         <activity android:name=".AdminInsertMenuActivity">
 
         </activity>
-        <activity android:name=".Favorites"></activity>
-        <activity android:name=".Recipe">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".Favorites">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+        <activity android:name=".Recipe">
+
         </activity>
         <activity android:name=".MenuSl">
 
@@ -35,6 +37,11 @@
 
         </activity>
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
     </application>

@@ -59,5 +59,6 @@
     <string name="show_btn">Show</string>
     <string name="show_btn_">View Profile</string>
     <string name="insertType">Item Type</string>
+    <string name="textView">Register to Meal Factory</string>
 
 </resources>

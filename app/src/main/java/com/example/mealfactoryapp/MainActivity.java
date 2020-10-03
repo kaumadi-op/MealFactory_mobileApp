@@ -19,8 +19,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView app = findViewById(R.id.app);
-        ImageView imageView = findViewById(R.id.imageView);
         login_btn = findViewById(R.id.login_btn);
         register_btn = findViewById(R.id.register_btn);
 

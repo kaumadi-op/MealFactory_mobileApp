@@ -36,6 +36,102 @@ public class MenuSl extends AppCompatActivity {
         favorite_btn = findViewById(R.id.favorite_btn);
         profile_btn = findViewById(R.id.profile_btn);
 
+        srilankan.setOnClickListener(new View.OnClickListener(){
+
+                                           @Override
+                                           public void onClick(View v){
+
+                                               Intent Intent = new Intent (MenuSl.this,MenuSl.class);
+                                               startActivity(Intent);
+
+                                               Log.i("lifecycle", "onClick method invoked");
+
+                                           }
+                                       }
+        );
+
+        indian.setOnClickListener(new View.OnClickListener(){
+
+                                           @Override
+                                           public void onClick(View v){
+
+                                               Intent Intent = new Intent (MenuSl.this,MenuSl.class);
+                                               startActivity(Intent);
+
+                                               Log.i("lifecycle", "onClick method invoked");
+
+                                           }
+                                       }
+        );
+        chinese.setOnClickListener(new View.OnClickListener(){
+
+                                           @Override
+                                           public void onClick(View v){
+
+                                               Intent Intent = new Intent (MenuSl.this,MenuSl.class);
+                                               startActivity(Intent);
+
+                                               Log.i("lifecycle", "onClick method invoked");
+
+                                           }
+                                       }
+        );
+        italian.setOnClickListener(new View.OnClickListener(){
+
+                                           @Override
+                                           public void onClick(View v){
+
+                                               Intent Intent = new Intent (MenuSl.this,MenuSl.class);
+                                               startActivity(Intent);
+
+                                               Log.i("lifecycle", "onClick method invoked");
+
+                                           }
+                                       }
+        );
+
+        home_btn.setOnClickListener(new View.OnClickListener(){
+
+                                           @Override
+                                           public void onClick(View v){
+
+                                               Intent Intent = new Intent (MenuSl.this,MenuSl.class);
+                                               startActivity(Intent);
+
+                                               Log.i("lifecycle", "onClick method invoked");
+
+                                           }
+                                       }
+        );
+
+        bag_btn.setOnClickListener(new View.OnClickListener(){
+
+                                           @Override
+                                           public void onClick(View v){
+
+                                               Intent Intent = new Intent (MenuSl.this,MenuSl.class);
+                                               startActivity(Intent);
+
+                                               Log.i("lifecycle", "onClick method invoked");
+
+                                           }
+                                       }
+        );
+
+        favorite_btn.setOnClickListener(new View.OnClickListener(){
+
+                                           @Override
+                                           public void onClick(View v){
+
+                                               Intent Intent = new Intent (MenuSl.this,Favorites.class);
+                                               startActivity(Intent);
+
+                                               Log.i("lifecycle", "onClick method invoked");
+
+                                           }
+                                       }
+        );
+
         profile_btn.setOnClickListener(new View.OnClickListener(){
 
                                          @Override
