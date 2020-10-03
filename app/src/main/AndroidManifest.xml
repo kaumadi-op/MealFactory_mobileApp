@@ -13,21 +13,21 @@
         <activity android:name=".MenuCh" />
         <activity android:name=".MenuIn" />
         <activity android:name=".MyProfile" />
-        <activity android:name=".AdminViewDeleteRecipeActivity" />
-        <activity android:name=".AdminMenuActivity" />
-        <activity android:name=".AdminInsertMenuActivity" />
         <activity android:name=".Favorites" />
         <activity android:name=".Recipe" />
         <activity android:name=".MenuSl">
+
+        </activity>
+        <activity android:name=".Register" />
+        <activity android:name=".ConfirmLogin" />
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Register" />
-        <activity android:name=".ConfirmLogin" />
-        <activity android:name=".MainActivity" />
+
     </application>
 
 </manifest>
