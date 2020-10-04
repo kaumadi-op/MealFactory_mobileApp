@@ -22,7 +22,7 @@ public class history extends AppCompatActivity {
     Button Updatebtn, Deletebtn,view;
 
     DatabaseReference dbRef;
-    user up;
+    fdorder up;
 
     private String id_no ;
     @Override
@@ -39,7 +39,7 @@ public class history extends AppCompatActivity {
         Deletebtn = findViewById(R.id.Deletebtn);
         view = findViewById(R.id.viewwbtn);
 
-        up = new user();
+        up = new fdorder();
 
         Updatebtn.setOnClickListener(new View.OnClickListener() {
             @Override
