@@ -51,6 +51,7 @@ public class Feedback extends AppCompatActivity {
                                       public void onClick(View v) {
 
                                           dbRef = FirebaseDatabase.getInstance().getReference().child("Feedbackcustomer");
+
                                           try{
                                               if (TextUtils.isEmpty(feedbackmsg.getText().toString()))
                                                   Toast.makeText(getApplicationContext(), "Please Enter message", Toast.LENGTH_SHORT).show();
@@ -60,15 +61,13 @@ public class Feedback extends AppCompatActivity {
                                                   feedbackcustomer1.setMessage(feedbackmsg.getText().toString().trim());
 
                                                   //Insert in to the database
+
                                                   dbRef.child("Customer" + count).setValue(feedbackcustomer1);
                                                   count++;
                                                   //Feedback to the user via a Toast
                                                   Toast.makeText(getApplicationContext(), "Feedback saved", Toast.LENGTH_SHORT).show();
                                                   clearControls();
-
-
                                               }
-
 
                                           }
 

@@ -70,7 +70,6 @@ public class Contactus extends AppCompatActivity {
                                                   user1.setEmail(editTextTextEmailAddress2.getText().toString().trim());
                                                   user1.setMessage(editTextTextPersonName2.getText().toString().trim());
 
-
                                                   //Insert in to the database
                                                   name = user1.getName();
                                                   dbRef.child("" + name).setValue(user1);
@@ -80,15 +79,9 @@ public class Contactus extends AppCompatActivity {
 
                                                   clearControls();
 
-
-
-
-
                                               }
 
-
                                           }
-
                                           catch(NullPointerException e){
 
                                               Toast.makeText(getApplicationContext(), "null", Toast.LENGTH_SHORT).show();
