@@ -143,4 +143,27 @@
     <string name="submit_btn2">Submit</string>
 
 
+    <string name="Delivery_btn">Delivery</string>
+    <string name="Takeaway_btn">Takeaway</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_ID">Enter ID No</string>
+    <string name="Select_Branch">Select the branch</string>
+    <string name="order_time">Order required time</string>
+
+    <string name="order_details">order details</string>
+    <string name="food_name">food name</string>
+    <string name="quantity">quantity</string>
+    <string name="price">price</string>
+    <string name="total">total</string>
+    <string name="bill_total">bill total</string>
+
+    <string name="order_history">order history</string>
+    <string name="order_type">order type</string>
+
+    <string name="description">Order description</string>
+
+    <string name="done_btn">done</string>
+
+
+
 </resources>

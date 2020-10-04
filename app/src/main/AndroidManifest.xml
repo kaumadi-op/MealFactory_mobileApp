@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MenuIt"></activity>
+        <activity android:name=".Takeaway"></activity>
+        <activity android:name=".Order"></activity>
+        <activity android:name=".history"></activity>
+        <activity android:name=".Orderdetails"></activity>
         <activity android:name=".MenuCh" />
         <activity android:name=".MenuIn" />
         <activity android:name=".MyProfile" />
