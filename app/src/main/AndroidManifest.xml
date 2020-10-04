@@ -20,9 +20,11 @@
         <activity android:name=".Payment" />
         <activity android:name=".paymentMethod" />
         <activity android:name=".EnterDelivery"/>
-        <activity android:name=".MenuSl">
+        <activity android:name=".MenuSl"/>
+        <activity android:name=".Contactus"/>
+        <activity android:name=".retrivecontactus" />
+        <activity android:name=".Feedback" />
 
-        </activity>
         <activity android:name=".Register" />
         <activity android:name=".ConfirmLogin" />
         <activity android:name=".MainActivity" >
