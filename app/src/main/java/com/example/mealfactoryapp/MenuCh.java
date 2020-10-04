@@ -124,7 +124,7 @@ public class MenuCh extends AppCompatActivity {
                                        @Override
                                        public void onClick(View v){
 
-                                           Intent Intent = new Intent (MenuCh.this,MenuSl.class);
+                                           Intent Intent = new Intent (MenuCh.this,Order.class);
                                            startActivity(Intent);
 
                                            Log.i("lifecycle", "onClick method invoked");

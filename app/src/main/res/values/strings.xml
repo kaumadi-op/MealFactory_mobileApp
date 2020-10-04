@@ -163,7 +163,8 @@
     <string name="description">Order description</string>
 
     <string name="done_btn">done</string>
-
+    <string name="Contactus">Contact us</string>
+    <string name="feedback">Feedback</string>
 
 
 </resources>

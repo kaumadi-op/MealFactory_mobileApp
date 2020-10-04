@@ -44,7 +44,7 @@ public class Favorites extends AppCompatActivity {
                                        @Override
                                        public void onClick(View v){
 
-                                           Intent Intent = new Intent (Favorites.this,MenuSl.class);
+                                           Intent Intent = new Intent (Favorites.this,Order.class);
                                            startActivity(Intent);
 
                                            Log.i("lifecycle", "onClick method invoked");

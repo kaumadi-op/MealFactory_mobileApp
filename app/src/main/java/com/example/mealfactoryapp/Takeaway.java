@@ -18,7 +18,7 @@ public class Takeaway extends AppCompatActivity {
     EditText editTextTextPersonName, editTextTextPersonName2, editTextTextPersonName3;
     Button submitbtn, Viewbtn;
     DatabaseReference dbRef;
-    user user1;
+    fdorder user1;
 
 
     String id;
@@ -50,7 +50,7 @@ public class Takeaway extends AppCompatActivity {
         submitbtn = findViewById(R.id.submitbtn);
         Viewbtn = findViewById(R.id.Viewbtn);
 
-        user1 = new user();
+        user1 = new fdorder();
 
 
         //set onclick listner to save button
