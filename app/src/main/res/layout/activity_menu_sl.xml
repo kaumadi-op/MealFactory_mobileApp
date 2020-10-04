@@ -161,7 +161,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/recipe_it1"
+                    android:id="@+id/recipe1"
                     android:layout_width="match_parent"
                     android:layout_height="38dp"
                     android:text="@string/recipe1"
@@ -225,12 +225,13 @@
                     android:textColor="@color/colorBlack" />
 
                 <Button
-                    android:id="@+id/order_btn"
+                    android:id="@+id/order_btn2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/cardview_shadow_end_color"
                     android:text="@string/order_btn"
                     android:textColor="@color/colorTheme" />
+
             </LinearLayout>
         </LinearLayout>
 

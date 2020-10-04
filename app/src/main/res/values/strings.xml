@@ -66,5 +66,7 @@
     <string name="recipe_ch2">Chinese soy souce noodles</string>
     <string name="recipe_it1">Creamy White Sauce Pasta</string>
     <string name="recipe_it2"><![CDATA[Chicken & Cheese Lasagna]]></string>
+    <string name="quantity">Quantity</string>
+    <string name="UnitPrice">UnitPrice</string>
 
 </resources>

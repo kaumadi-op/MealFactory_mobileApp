@@ -11,8 +11,14 @@ import android.widget.ImageButton;
 
 public class MenuSl extends AppCompatActivity {
 
-    Button srilankan, indian, chinese, italian, order_btn;
+    Button srilankan, indian, chinese, italian, order_btn, order_btn2;
     ImageButton home_btn, bag_btn, favorite_btn, profile_btn;
+
+    int recipe;
+
+    public int returnRecipe(){
+        return recipe;
+    }
 
 
     @Override
@@ -25,6 +31,7 @@ public class MenuSl extends AppCompatActivity {
         chinese = findViewById(R.id.chinese);
         italian = findViewById(R.id.italian);
         order_btn = findViewById(R.id.order_btn);
+        order_btn2 = findViewById(R.id.order_btn);
 
         home_btn = findViewById(R.id.home_btn);
         bag_btn = findViewById(R.id.bag_btn);
@@ -36,6 +43,9 @@ public class MenuSl extends AppCompatActivity {
                                          @Override
                                          public void onClick(View v){
 
+                                             recipe = 1;
+                                             returnRecipe();
+
                                              Intent Intent = new Intent (MenuSl.this,MenuSl.class);
                                              startActivity(Intent);
 
@@ -44,6 +54,24 @@ public class MenuSl extends AppCompatActivity {
                                          }
                                      }
         );
+
+        order_btn2.setOnClickListener(new View.OnClickListener(){
+
+                                         @Override
+                                         public void onClick(View v){
+
+                                             recipe = 2;
+                                             returnRecipe();
+
+                                             Intent Intent = new Intent (MenuSl.this,Recipe.class);
+                                             startActivity(Intent);
+
+                                             Log.i("lifecycle", "onClick method invoked");
+
+                                         }
+                                     }
+        );
+
 
 
 

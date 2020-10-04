@@ -14,6 +14,12 @@ public class MenuIt extends AppCompatActivity {
     Button srilankan, indian, chinese, italian, order_btn;
     ImageButton home_btn, bag_btn, favorite_btn, profile_btn;
 
+    int recipe;
+
+    public int returnRecipe(){
+        return recipe;
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

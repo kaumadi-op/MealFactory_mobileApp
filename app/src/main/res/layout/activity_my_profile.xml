@@ -4,73 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Recipe">
-
-    <Button
-        android:id="@+id/order_btn"
-        android:layout_width="312dp"
-        android:layout_height="51dp"
-        android:background="@color/colorTheme"
-        android:text="@string/order_btn"
-        android:textAlignment="center"
-        android:textColor="@color/colorBackground"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.474"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="408dp" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="375dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-        <Button
-            android:id="@+id/srilankan"
-            android:layout_width="wrap_content"
-            android:layout_height="51dp"
-            android:layout_weight="1"
-            android:background="@color/colorBackground"
-            android:text="@string/srilankan"
-            android:textColor="@color/colorTheme"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/indian"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/indian" />
-
-        <Button
-            android:id="@+id/chinese"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/chinese" />
-
-        <Button
-            android:id="@+id/italian"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/italian" />
-    </LinearLayout>
+    tools:context=".MyProfile">
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="372dp"
-        android:layout_height="75dp"
+        android:layout_width="368dp"
+        android:layout_height="80dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        app:layout_constraintVertical_bias="0.75">
 
         <ImageButton
             android:id="@+id/home_btn"
@@ -111,8 +57,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="308dp"
-        android:layout_height="52dp"
+        android:layout_width="366dp"
+        android:layout_height="64dp"
         android:layout_marginTop="16dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -129,9 +75,9 @@
 
         <TextView
             android:id="@+id/myProfile"
-            android:layout_width="226dp"
+            android:layout_width="295dp"
             android:layout_height="match_parent"
-            android:text="@string/app"
+            android:text="@string/myProfile"
             android:textAlignment="center"
             android:textColor="@color/colorName"
             android:textSize="24sp"
@@ -140,45 +86,41 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="357dp"
-        android:layout_height="251dp"
+        android:id="@+id/linearLayout7"
+        android:layout_width="392dp"
+        android:layout_height="313dp"
+        android:layout_marginTop="8dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/order_btn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-        <TextView
-            android:id="@+id/recipeTitle"
+        <ImageView
+            android:id="@+id/imageView4"
             android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:textAlignment="center"
-            android:textColor="@color/colorBlack"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:layout_height="113dp"
+            app:srcCompat="@drawable/dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="52dp"
+            android:layout_height="66dp"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/ItemCode"
-                android:layout_width="135dp"
-                android:layout_height="match_parent"
+                android:id="@+id/name"
+                android:layout_width="95dp"
+                android:layout_height="34dp"
                 android:layout_weight="1"
-                android:text="@string/insertItemCode"
-                android:textColor="@color/colorBlack"
-                android:textSize="18sp" />
+                android:text="@string/name" />
 
             <EditText
-                android:id="@+id/itemCode"
+                android:id="@+id/editTextTextPersonName"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <LinearLayout
@@ -187,47 +129,77 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/UnitPrice"
-                android:layout_width="133dp"
-                android:layout_height="match_parent"
+                android:id="@+id/email"
+                android:layout_width="95dp"
+                android:layout_height="51dp"
                 android:layout_weight="1"
-                android:text="@string/UnitPrice"
-                android:textColor="@color/colorBlack"
-                android:textSize="18sp" />
+                android:text="@string/email" />
 
             <EditText
-                android:id="@+id/unitPrice"
+                android:id="@+id/editTextTextEmailAddress"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:inputType="textEmailAddress" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="61dp"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/quantity"
-                android:layout_width="135dp"
-                android:layout_height="match_parent"
+                android:id="@+id/mobile"
+                android:layout_width="95dp"
+                android:layout_height="43dp"
                 android:layout_weight="1"
-                android:text="@string/quantity"
-                android:textColor="@color/colorBlack"
-                android:textSize="18sp" />
+                android:text="@string/mobile" />
 
             <EditText
-                android:id="@+id/qty"
+                android:id="@+id/editTextPhone"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="73dp"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="number" />
+                android:inputType="phone" />
         </LinearLayout>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="372dp"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        app:layout_constraintVertical_bias="0.507">
+
+        <Button
+            android:id="@+id/show_btn"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTheme"
+            android:text="@string/show_btn_"
+            android:textColor="@color/colorBackground" />
+
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="136dp"
+            android:layout_height="47dp"
+            android:background="@color/colorTheme"
+            android:text="@string/update_btn"
+            android:textColor="@color/colorBackground" />
+
+        <Button
+            android:id="@+id/deleteProf_btn"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTheme"
+            android:text="@string/deleteProf_btn"
+            android:textColor="@color/colorBackground" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

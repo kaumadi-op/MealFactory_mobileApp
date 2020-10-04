@@ -8,17 +8,46 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class Recipe extends AppCompatActivity {
 
     Button order_btn, srilankan, indian, chinese, italian;
     ImageButton home_btn, bag_btn, favorite_btn, profile_btn;
+    EditText itemCode, unitPrice, qty;
+    TextView recipeTitle;
+    RecipeDetails recipeDetail;
+
+    String itemCode_,unitPrice_, recipeTitle_;
+    Integer qty_;
+
+    MenuSl sl;
+    MenuIn in;
+    MenuCh ch;
+    MenuIt it;
+
+    int recipe;
+
+    private void getRecipe(){
+
+        recipe = sl.returnRecipe();
+        recipe = in.returnRecipe();
+        recipe = ch.returnRecipe();
+        recipe = it.returnRecipe();
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe);
+
+        recipeTitle = findViewById(R.id.recipeTitle);
+        itemCode = findViewById(R.id.itemCode);
+        unitPrice = findViewById(R.id.unitPrice);
+        qty = findViewById(R.id.qty);
 
         srilankan = findViewById(R.id.srilankan);
         indian = findViewById(R.id.indian);
@@ -31,6 +60,37 @@ public class Recipe extends AppCompatActivity {
         profile_btn = findViewById(R.id.profile_btn);
 
         order_btn = findViewById(R.id.order_btn);
+
+        /*getRecipe();
+
+        if (recipe == 1 ){
+
+            recipeDetail.setQty(Integer.parseInt(qty.getText().toString().trim()));
+            qty_ = recipeDetail.getQty();
+            recipeDetail.setItemCode("SL001");
+            recipeDetail.setRecipeTitle("Rice & Curry Egg");
+            recipeDetail.setUnitPrice("Rs.180.00");
+
+        }
+        if (recipe == 1 ){
+
+            recipeDetail.setQty(Integer.parseInt(qty.getText().toString().trim()));
+            qty_ = recipeDetail.getQty();
+            recipeDetail.setItemCode("SL001");
+            recipeDetail.setRecipeTitle("Rice & Curry Egg");
+            recipeDetail.setUnitPrice("Rs.180.00");
+
+        }
+        else if (recipe == 2 ){
+
+            recipeDetail.setQty(Integer.parseInt(qty.getText().toString().trim()));
+            qty_ = recipeDetail.getQty();
+            recipeDetail.setItemCode("SL002");
+            recipeDetail.setRecipeTitle("Rice & Curry Chicken");
+            recipeDetail.setUnitPrice("Rs.250.00");
+
+        }*/
+
 
 
         srilankan.setOnClickListener(new View.OnClickListener(){
