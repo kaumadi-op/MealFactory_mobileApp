@@ -42,7 +42,7 @@ public class retrivecontactus extends AppCompatActivity {
 
         //final String getName = name.toString();
 
-
+        dep = new User();
 
         btnUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +52,7 @@ public class retrivecontactus extends AppCompatActivity {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         if(dataSnapshot.hasChild(Name)) {
-                            //try {
+                            try {
                                 dep.setName(name.getText().toString().trim());
                                 dep.setEmail(email.getText().toString().trim());
                                 dep.setMessage(message.getText().toString().trim());
@@ -68,9 +68,9 @@ public class retrivecontactus extends AppCompatActivity {
 
                                 Toast.makeText(retrivecontactus.this, "Update Success", Toast.LENGTH_SHORT).show();
 
-                            //} catch (Exception e) {
+                            } catch (Exception e) {
 
-                            //}
+                            }
                         }
                     }
 

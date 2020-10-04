@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class MainActivity extends AppCompatActivity {
+public class Contactus extends AppCompatActivity {
     EditText editTextTextPersonName, editTextTextEmailAddress2, editTextTextPersonName2;
     Button button;
     DatabaseReference dbRef;
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_contactus);
 
         editTextTextPersonName = findViewById(R.id.editTextTextPersonName);
         editTextTextEmailAddress2 = findViewById(R.id.editTextTextEmailAddress2);
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         btnView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,retrivecontactus.class);
+                Intent intent = new Intent(Contactus.this,retrivecontactus.class);
                 intent.putExtra("Name",user1.getName());
                 startActivity(intent);
             }
@@ -110,3 +110,5 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
+
+
