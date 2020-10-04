@@ -96,7 +96,7 @@
             android:id="@+id/cardNo"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="@string/Card_no"
+            android:text="@string/caradno"
             android:textColor="@color/colorName"
             android:textSize="24sp" />
 
@@ -125,7 +125,7 @@
             android:layout_width="202dp"
             android:layout_height="42dp"
             android:layout_weight="1"
-            android:text="@string/expir_date"
+            android:text="@string/exdate"
             android:textColor="@color/colorName"
             android:textSize="24sp" />
 
@@ -134,7 +134,7 @@
             android:layout_width="204dp"
             android:layout_height="43dp"
             android:layout_weight="1"
-            android:text="@string/Sec"
+            android:text="@string/cvv"
             android:textColor="@color/colorName"
             android:textSize="24sp" />
     </LinearLayout>
@@ -184,7 +184,7 @@
             android:id="@+id/phone_number"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="@string/Contact_no"
+            android:text="@string/ContactNo"
             android:textColor="@color/colorName"
             android:textSize="24sp" />
 
@@ -203,7 +203,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:background="@color/colorBackground"
-        android:text="@string/Sub_btn"
+        android:text="@string/sub_btn"
         android:textColor="@color/colorTheme"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"

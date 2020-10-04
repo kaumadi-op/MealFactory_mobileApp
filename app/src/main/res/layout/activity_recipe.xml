@@ -10,16 +10,17 @@
         android:id="@+id/order_btn"
         android:layout_width="312dp"
         android:layout_height="51dp"
+        android:layout_marginBottom="112dp"
         android:background="@color/colorTheme"
         android:text="@string/order_btn"
         android:textAlignment="center"
         android:textColor="@color/colorBackground"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.474"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="408dp" />
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -191,7 +192,7 @@
                 android:layout_width="133dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/UnitPrice"
+                android:text="@string/unitprice"
                 android:textColor="@color/colorBlack"
                 android:textSize="18sp" />
 
@@ -215,7 +216,7 @@
                 android:layout_width="135dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/quantity"
+                android:text="@string/Quantity"
                 android:textColor="@color/colorBlack"
                 android:textSize="18sp" />
 
