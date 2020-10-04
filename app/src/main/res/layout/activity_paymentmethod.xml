@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app"
+    style="@style/TextAppearance.AppCompat.Body1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:textAlignment="center"
+    tools:context=".paymentMethod">
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="196dp"
+        android:text="@string/Contact_no"
+        android:textColor="@color/colorName"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioBtn1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/app"
+        android:textColor="@color/colorName"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dilivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/Payment"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/whatsapp_image_2020_08_12_at_04_44_41" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="138dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/download__6_" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="153dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/download__7_" />
+
+    <RadioButton
+        android:id="@+id/radioBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/visa_btn"
+        android:textColor="@color/colorBlack"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <RadioButton
+        android:id="@+id/radioBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/master_btn"
+        android:textColor="@color/colorBlack"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioBtn1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/Name"
+        android:textColor="@color/colorName"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioBtn1" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/Date"
+        android:textColor="@color/colorName"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioBtn1" />
+
+    <TextView
+        android:id="@+id/amont"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="140dp"
+        android:text="@string/Amount"
+        android:textColor="@color/colorName"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioBtn1" />
+
+    <EditText
+        android:id="@+id/date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toEndOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/radioBtn2" />
+
+    <EditText
+        android:id="@+id/amount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toEndOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/radioBtn2" />
+
+
+    <EditText
+        android:id="@+id/phone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toEndOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/radioBtn2" />
+
+    <EditText
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/radioBtn2" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="185dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/colorTheme"
+        android:text="@string/enter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone1"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <Button
+        android:id="@+id/nxt"
+        android:layout_width="185dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/colorTheme"
+        android:text="@string/Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

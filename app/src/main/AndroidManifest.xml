@@ -15,6 +15,11 @@
         <activity android:name=".MyProfile" />
         <activity android:name=".Favorites" />
         <activity android:name=".Recipe" />
+        <activity android:name=".cardDetails" />
+        <activity android:name=".Dilivery" />
+        <activity android:name=".Payment" />
+        <activity android:name=".paymentMethod" />
+        <activity android:name=".EnterDelivery"/>
         <activity android:name=".MenuSl">
 
         </activity>
