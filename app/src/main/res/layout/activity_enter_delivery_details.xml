@@ -189,6 +189,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorTheme"
+            android:onClick="Submit"
             android:text="@string/Sub_btn"
             android:textColor="@color/colorBackground"
             android:textSize="24sp" />

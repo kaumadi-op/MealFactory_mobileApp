@@ -37,35 +37,6 @@ public class EnterDelivery extends AppCompatActivity {
         Sub = findViewById(R.id.subbtn);
         Next = findViewById(R.id.nxtbtn);
 
-        Sub.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                reference = FirebaseDatabase.getInstance().getReference().child("Delivery");
-                try {
-                    if (TextUtils.isEmpty(Name.getText().toString()))
-                        Toast.makeText(getApplicationContext(), "Please enter a Name", Toast.LENGTH_SHORT).show();
-                    else if (TextUtils.isEmpty(Add.getText().toString()))
-                        Toast.makeText(getApplicationContext(), "Please enter Your address", Toast.LENGTH_SHORT).show();
-                    else if (TextUtils.isEmpty(Loc.getText().toString()))
-                        Toast.makeText(getApplicationContext(), "Please enter Your Location", Toast.LENGTH_SHORT).show();
-                    else if (TextUtils.isEmpty(Contact.getText().toString()))
-                        Toast.makeText(getApplicationContext(), "Please enter an Phone number", Toast.LENGTH_SHORT).show();
-                    else {
-                        String name = Name.getEditableText().toString();
-                        String ContactNo = Contact.getEditableText().toString();
-                        String Address = Add.getEditableText().toString();
-                        String Location = Loc.getEditableText().toString();
-
-                        Delivery delivery = new Delivery(name, Address, Location, ContactNo);
-
-                        reference.child(ContactNo).setValue(delivery);
-                        Toast.makeText(getApplicationContext(), "Data Saved Successfully", Toast.LENGTH_SHORT).show();
-                    }
-                } catch (NumberFormatException e) {
-                    Toast.makeText(getApplicationContext(), "Invalid", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
         Next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -110,6 +81,55 @@ public class EnterDelivery extends AppCompatActivity {
 
         });
     }
+    private Boolean validatePhoneNo(){
+
+        String ContactNo = Contact.getEditableText().toString();
+        String MobilePattern = "[0-9]{10}";
+
+        if (ContactNo.isEmpty()) {
+            Contact.setError("Field cannot be empty");
+            return false;
+        }else if(!ContactNo.matches(MobilePattern)){
+            Contact.setError("please enter valid phone number");
+            return false;
+        }
+        else {
+            Contact.setError(null);
+            return true;
+        }
+    }
+
+     public void Submit(View view) {
+         reference = FirebaseDatabase.getInstance().getReference().child("Delivery");
+         try {
+             if (!validatePhoneNo()) {
+                 return;
+             } else {
+                 if (TextUtils.isEmpty(Name.getText().toString()))
+                     Toast.makeText(getApplicationContext(), "Please enter a Name", Toast.LENGTH_SHORT).show();
+                 else if (TextUtils.isEmpty(Add.getText().toString()))
+                     Toast.makeText(getApplicationContext(), "Please enter Your address", Toast.LENGTH_SHORT).show();
+                 else if (TextUtils.isEmpty(Loc.getText().toString()))
+                     Toast.makeText(getApplicationContext(), "Please enter Your Location", Toast.LENGTH_SHORT).show();
+                 else if (TextUtils.isEmpty(Contact.getText().toString()))
+                     Toast.makeText(getApplicationContext(), "Please enter an Phone number", Toast.LENGTH_SHORT).show();
+                 else {
+                     String name = Name.getEditableText().toString();
+                     String ContactNo = Contact.getEditableText().toString();
+                     String Address = Add.getEditableText().toString();
+                     String Location = Loc.getEditableText().toString();
+
+                     Delivery delivery = new Delivery(name, Address, Location, ContactNo);
+
+                     reference.child(ContactNo).setValue(delivery);
+                     Toast.makeText(getApplicationContext(), "Data Saved Successfully", Toast.LENGTH_SHORT).show();
+                 }
+             }
+         } catch (NumberFormatException e) {
+             Toast.makeText(getApplicationContext(), "Invalid", Toast.LENGTH_SHORT).show();
+         }
+
+     }
 }
 
 

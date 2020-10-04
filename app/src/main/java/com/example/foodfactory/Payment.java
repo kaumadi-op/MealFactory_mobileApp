@@ -24,7 +24,7 @@ public class Payment extends AppCompatActivity {
         cash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(Payment.this, "Thnak You!!,We will get Your order", Toast.LENGTH_LONG).show();
+                Toast.makeText(Payment.this, "Thank You!!,We will get Your order", Toast.LENGTH_LONG).show();
             }
         });
     }
