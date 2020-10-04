@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Meal Factory App</string>
+    <string name="app">Meal Factory</string>
+    <string name="logo">Logo</string>
+    <string name="divider">Divider</string>
+    <string name="topic">Lets start the ordering</string>
+    <string name="Delivery_btn">Delivery</string>
+    <string name="Takeaway_btn">Takeaway</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_ID">Enter ID No</string>
+    <string name="Select_Branch">Select the branch</string>
+    <string name="order_time">Order required time</string>
+    <string name="submit_btn">Submit</string>
+    <string name="order_details">order details</string>
+    <string name="food_name">food name</string>
+    <string name="quantity">quantity</string>
+    <string name="price">price</string>
+    <string name="total">total</string>
+    <string name="bill_total">bill total</string>
+    <string name="add_btn">add</string>
+    <string name="order_history">order history</string>
+    <string name="order_type">order type</string>
+    <string name="date">Date</string>
+    <string name="description">Order description</string>
+
+    <string name="done_btn">done</string>
+    <string name="home_btn">Home</string>
+    <string name="bag_btn">Bag</string>
+    <string name="favorite_btn">Favorites</string>
+    <string name="profile_btn">Profile</string>
+
+</resources>
