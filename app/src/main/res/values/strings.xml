@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">contact,feedback</string>
+    <string name="app">Meal Factory</string>
+    <string name="logo">Logo</string>
+    <string name="divider">Divider</string>
+    <string name="title">Contact Us</string>
+    <string name="name">Name</string>
+    <string name="email">E-mail</string>
+    <string name="message">type message</string>
+    <string name="submit_btn">SEND MESSAGE</string>
+    <string name="delivery_icon">Delivery</string>
+    <string name="mail_icon">Meal Factory E-mail</string>
+    <string name="contact_number">+94764532986</string>
+    <string name="meal_factory_email">mealfactory@gmail.com</string>
+
+    <string name="thanking_msg1">Thank You</string>
+    <string name="thanking_msg2">We will be in touch shortly</string>
+    <string name="backToHome_btn">Back to Home</string>
+
+
+    <string name="topic">Give a Feedback</string>
+    <string name="notice">write a review</string>
+    <string name="rate">Rate the Delivery</string>
+    <string name="rating_bar">Rate</string>
+    <string name="feedback_message">type the message</string>
+    <string name="submit_btn2">Submit</string>
+
+    <string name="home_btn">Home</string>
+    <string name="bag_btn">Bag</string>
+    <string name="favorite_btn">Favorites</string>
+    <string name="profile_btn">Profile</string>
+</resources>

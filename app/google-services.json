@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "129464719628",
+    "firebase_url": "https://meal-factory-app.firebaseio.com",
+    "project_id": "meal-factory-app",
+    "storage_bucket": "meal-factory-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129464719628:android:a8a737b456b62415e71129",
+        "android_client_info": {
+          "package_name": "com.example.contactfeedback"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129464719628-mg9dicjhinfjse75m2dbnokj695o81b3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.contactfeedback",
+            "certificate_hash": "5bf4cd8e7aa06c14f6a4e80aab0e4c5a6a8bddc2"
+          }
+        },
+        {
+          "client_id": "129464719628-d0svniu59ck7vc4o2j7t399ke83i37ir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmZWz9imL-oewFjyZU0-7ukAQEBY7Gykc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129464719628-d0svniu59ck7vc4o2j7t399ke83i37ir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129464719628:android:acbc51a83c6d47b3e71129",
+        "android_client_info": {
+          "package_name": "com.example.foodfactory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129464719628-sivnbfhakpvorc7umavf9i41pnjleoph.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodfactory",
+            "certificate_hash": "b66151e9b48e8b2e397e51529a04abd8fb345045"
+          }
+        },
+        {
+          "client_id": "129464719628-d0svniu59ck7vc4o2j7t399ke83i37ir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmZWz9imL-oewFjyZU0-7ukAQEBY7Gykc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129464719628-d0svniu59ck7vc4o2j7t399ke83i37ir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129464719628:android:fb8285d9c2df396fe71129",
+        "android_client_info": {
+          "package_name": "com.example.mealfactoryapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129464719628-71l966mjnh332ljkfd3t28nec3cq0ha2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mealfactoryapp",
+            "certificate_hash": "6291b66d3aeb81bc1078030ac1a00ab4a2b7695c"
+          }
+        },
+        {
+          "client_id": "129464719628-d0svniu59ck7vc4o2j7t399ke83i37ir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmZWz9imL-oewFjyZU0-7ukAQEBY7Gykc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129464719628-d0svniu59ck7vc4o2j7t399ke83i37ir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129464719628:android:2c904b6b893edab4e71129",
+        "android_client_info": {
+          "package_name": "com.example.orderfunction1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129464719628-iuagimrjfmreqpskn4up95kqih9e6ovt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.orderfunction1",
+            "certificate_hash": "f1f47c9e7d21600fc29effb2a370e9197c6d741a"
+          }
+        },
+        {
+          "client_id": "129464719628-d0svniu59ck7vc4o2j7t399ke83i37ir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmZWz9imL-oewFjyZU0-7ukAQEBY7Gykc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129464719628-d0svniu59ck7vc4o2j7t399ke83i37ir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
