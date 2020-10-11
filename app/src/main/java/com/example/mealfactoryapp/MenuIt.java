@@ -126,7 +126,7 @@ public class MenuIt extends AppCompatActivity {
                                        @Override
                                        public void onClick(View v){
 
-                                           Intent Intent = new Intent (MenuIt.this,MenuSl.class);
+                                           Intent Intent = new Intent (MenuIt.this,Order.class);
                                            startActivity(Intent);
 
                                            Log.i("lifecycle", "onClick method invoked");

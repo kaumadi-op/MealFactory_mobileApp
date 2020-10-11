@@ -36,6 +36,14 @@ public class MenuIn extends AppCompatActivity {
         favorite_btn = findViewById(R.id.favorite_btn);
         profile_btn = findViewById(R.id.profile_btn);
 
+        bag_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuIn.this, Order.class);
+                startActivity(intent);
+            }
+        });
+
         order_btn.setOnClickListener(new View.OnClickListener(){
 
                                          @Override
@@ -119,19 +127,19 @@ public class MenuIn extends AppCompatActivity {
                                     }
         );
 
-        bag_btn.setOnClickListener(new View.OnClickListener(){
+        /*bag_btn.setOnClickListener(new View.OnClickListener(){
 
                                        @Override
                                        public void onClick(View v){
 
-                                           Intent Intent = new Intent (MenuIn.this,MenuSl.class);
+                                           Intent Intent = new Intent (MenuIn.this,Order.class);
                                            startActivity(Intent);
 
                                            Log.i("lifecycle", "onClick method invoked");
 
                                        }
                                    }
-        );
+        );*/
 
         favorite_btn.setOnClickListener(new View.OnClickListener(){
 

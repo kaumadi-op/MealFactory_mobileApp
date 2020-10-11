@@ -68,7 +68,7 @@
             android:id="@+id/nameoncard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/nameonCard"
+            android:text="@string/nameoncard"
             android:textColor="@android:color/holo_red_dark"
             android:textSize="24sp" />
 
@@ -87,12 +87,10 @@
         android:id="@+id/linearLayout8"
         android:layout_width="413dp"
         android:layout_height="114dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="4dp"
         android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        tools:layout_editor_absoluteX="-1dp">
 
         <TextView
             android:id="@+id/cardNo"
@@ -119,9 +117,8 @@
         android:layout_height="43dp"
         android:layout_marginTop="4dp"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+        tools:layout_editor_absoluteX="1dp">
 
         <TextView
             android:id="@+id/exdate"
@@ -132,6 +129,14 @@
             android:textColor="@color/colorName"
             android:textSize="24sp" />
 
+        <TextView
+            android:id="@+id/cvv"
+            android:layout_width="204dp"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:text="@string/Sec"
+            android:textColor="@color/colorName"
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -140,8 +145,8 @@
         android:layout_height="46dp"
         android:layout_marginTop="2dp"
         android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9"
+        tools:layout_editor_absoluteX="1dp">
 
         <EditText
             android:id="@+id/expirdate"
@@ -170,12 +175,10 @@
         android:id="@+id/linerlayout"
         android:layout_width="412dp"
         android:layout_height="113dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="4dp"
         android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
+        tools:layout_editor_absoluteX="1dp">
 
         <TextView
             android:id="@+id/phone_number"
@@ -198,27 +201,13 @@
         android:layout_width="191dp"
         android:layout_height="54dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:background="@color/colorBackground"
-        android:text="@string/sub_btn"
+        android:text="@string/Sub_btn"
         android:textColor="@color/colorTheme"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linerlayout" />
-
-    <TextView
-        android:id="@+id/cvv"
-        android:layout_width="204dp"
-        android:layout_height="43dp"
-        android:layout_weight="1"
-        android:text="@string/Sec"
-        android:textColor="@color/colorName"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="205dp"
-        tools:layout_editor_absoluteY="369dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
