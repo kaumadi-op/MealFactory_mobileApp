@@ -28,9 +28,9 @@ public class MyProfile extends AppCompatActivity {
     Register user;
     ConfirmLogin log1;
 
-    int phone;
+    Integer phone;
 
-    public int getUser(){
+    public Integer getUser(){
         phone = user.returnUser();
         return phone;
     }
@@ -66,7 +66,7 @@ public class MyProfile extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                //getUser();
+                //phone = getUser();
                 // Get a reference to our posts
                 dbRef = FirebaseDatabase.getInstance().getReference().child("RegisterUser").child("777654322");
                 // Attach a listener to read the data
@@ -113,23 +113,17 @@ public class MyProfile extends AppCompatActivity {
                                                               upRef.setValue(user1);
 
                                                               Toast.makeText(getApplicationContext(), "Data updated successfully", Toast.LENGTH_SHORT).show();
-
-
                                                           }
                                                           catch(NumberFormatException e){
                                                               Toast.makeText(getApplicationContext(), "Invalid number format", Toast.LENGTH_SHORT).show();
-
                                                           }
-
                                                       }
                                                       else{
                                                           Toast.makeText(getApplicationContext(),"No source to Update",Toast.LENGTH_SHORT).show();
                                                       }
                                                   }
-
                                                   @Override
                                                   public void onCancelled(@NonNull DatabaseError databaseError) {
-
                                                   }
                                               });
 
@@ -155,23 +149,17 @@ public class MyProfile extends AppCompatActivity {
 
                                                               Intent Intent = new Intent(MyProfile.this,MainActivity.class);
                                                               startActivity(Intent);
-
-
                                                           }
                                                           catch(NullPointerException e){
                                                               Toast.makeText(getApplicationContext(), "Invalid", Toast.LENGTH_SHORT).show();
-
                                                           }
-
                                                       }
                                                       else{
                                                           Toast.makeText(getApplicationContext(),"No source to Delete",Toast.LENGTH_SHORT).show();
                                                       }
                                                   }
-
                                                   @Override
                                                   public void onCancelled(@NonNull DatabaseError databaseError) {
-
                                                   }
                                               });
 

@@ -53,28 +53,22 @@ public class ConfirmLogin extends AppCompatActivity {
 
                                                 @Override
                                                 public void onDataChange(DataSnapshot dataSnapshot) {
-                                                    if(dataSnapshot.hasChild("777654321") ){
-                                                        readRef = FirebaseDatabase.getInstance().getReference().child("RegisterUser").child(ph);
+                                                    if(dataSnapshot.hasChild(Integer.toString(phone)) ){
+                                                        readRef = FirebaseDatabase.getInstance().getReference().child("RegisterUser").child(Integer.toString(phone));
 
                                                         Intent Intent = new Intent(ConfirmLogin.this,MenuSl.class);
                                                         startActivity(Intent);
 
                                                         Toast.makeText(getApplicationContext(), "Login success!!", Toast.LENGTH_SHORT).show();
-
                                                     }
                                                     else{
                                                         Toast.makeText(getApplicationContext(),"Invalid login",Toast.LENGTH_SHORT).show();
                                                     }
-
                                                 }
-
                                                 @Override
                                                 public void onCancelled(@NonNull DatabaseError databaseError) {
-
                                                 }
                                             });
-
-
                                         }
                                     }
         );

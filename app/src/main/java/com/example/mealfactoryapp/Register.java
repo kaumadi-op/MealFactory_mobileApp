@@ -28,13 +28,12 @@ public class Register extends AppCompatActivity {
         return phone;
     }
 
-    private void clearControls(){
+    private void clearControls() {
         name1.setText("");
         mobile1.setText("");
         email1.setText("");
 
     }
-
 
 
     @Override
